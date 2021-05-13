@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: io.javabrains.coronavirustracker.CoronavirusTrackerApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.295 s <<< FAILURE! - in io.javabrains.coronavirustracker.CoronavirusTrackerApplicationTests
+contextLoads  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'coronaVirusDataService': Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: java/net/http/HttpClient
+Caused by: java.lang.NoClassDefFoundError: java/net/http/HttpClient
+Caused by: java.lang.ClassNotFoundException: java.net.http.HttpClient
+
